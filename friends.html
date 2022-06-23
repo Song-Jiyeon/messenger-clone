@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쪽지 - 친구목록</title>
+    <link rel="shortcut icon" type="image/x-icon" href="src/logo.png">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>48%</span>
+            <i class="fa-solid fa-battery-half fa-lg"></i>
+        </div>
+    </div>
+    
+    <header class="screen-header">
+        <h1 class="screen-header__title">친구</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span> 
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+        </div>
+    </header>
+
+    <div class="user-component">
+        <div class="user-component__column">
+            <img  class="user-component__avatar" src="src/avatar-img.PNG" />
+            <div class="user-component__text">
+                <h4 class="user-component__title">JJ</h4>
+                <p>2022.06.24</p>
+            </div>
+        </div>
+        <div class="user-component__column"></div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <!-- friends -->
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-xl"></i>
+                </a>
+            </li>
+            <!-- chats -->
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <span class="nav__notification">1</span>
+                    <i class="fas fa-comment-alt fa-xl"></i>
+                </a>
+            </li>
+            <!-- search -->
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <i class="fas fa-search fa-xl"></i>
+                </a>
+            </li>
+            <!-- find -->
+            <li class="nav__btn">
+                <a class="nav__link" href="#">
+                    <span class="nav__notification-dot"></span>
+                    <i class="fas fa-ellipsis-h fa-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/3e00696187.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,78 +1,23 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import url(reset.css);
-@import url(status-bar.css);
 @import url(variables.css);
+
+/* Components */
+@import url(components/status-bar.css);
+@import url(components/nav-bar.css);
+@import url(components/screen-header.css);
+@import url(components/user-component.css);
+
+/* Screens */
+@import url(screens/login.css);
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Pretendard Std', Pretendard, Roboto, 'Segoe UI', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
+/* selected text */
 ::selection {
-    background: var(--background);
+    background: var(--main);
     color: white;
 }
 
-.welcome-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 80px 0;
-    text-align: center;
-}
-.welcome-header__title {
-    margin-bottom: 20px;
-    font-size: 25px;
-}
-
-.welcome-header__text {
-    width: 60%;
-    font-size: 15px;
-    opacity: 0.6;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 30px;
-}
-
-.login-form input{
-    border: none;
-    padding: 12px 10px;
-    font-size: 16px;
-}
-
-.login-form input:not(.login-form__login) {
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
-    transition: border-color 0.3s ease-in-out;
-}
-
-.login-form input::placeholder {
-    color: rgba(0, 0, 0, 0,2);
-}
-
-.login-form input[type="password"] {
-    margin-bottom: 40px;
-}
-
-.login-form a {
-    margin-top: 10px;
-    text-align: center;
-    color: rgb(93, 93, 93)
-}
-
-.login-form input:focus {
-    border-color: var(--point);
-}
-
-.login-form input[type="submit"] {
-    background-color: rgb(225, 232, 255);
-    color: var(--point);
-    cursor: pointer;
-}
-
-.login-form input[type="submit"]:hover {
-    background-color: var(--background);
-    color: white;
-}
-   

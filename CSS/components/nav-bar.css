@@ -1,0 +1,50 @@
+/* Naivigation bar */
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__link {
+    color: rgba(0, 0, 0, 0.3);
+    transition: color 0.1s ease-in-out;
+    position: relative;
+}
+
+.nav__link:hover {
+    color: var(--main)
+}
+
+.nav__notification {
+    background-color: var(--point);
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    left: 15px;
+    top: -10px;
+}
+
+.nav__notification-dot {
+    background-color: var(--point);
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: -5px;
+}
+
